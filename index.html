@@ -11,47 +11,56 @@
 </head>
 <body>  
         <header>
-          <nav class="navhead">
-              <input type="checkbox" id="check">
-              <label for="check" class="checkbtn">
-                  <i class="fa-solid fa-bars"></i>
-              </label>
-              <a href="" class="enlace">
-                  <img src="../Trabajo/img/codoacodo.png" alt="" class="logo">
-                  <div class="izquierda">
-                    <h4>Conf Bs As</h4>
-                 </div>
-              </a>
-          <div class="menu">
-            <ul class="ulhead">
-                <li class="lihead"><a class="active" href="#" id="ahead">La conferencia</a></li>
-                <li class="lihead"><a href="#" id="ahead">Los oradores</a></li>
-                <li class="lihead"><a href="#" id="ahead">El lugar y la fecha</a></li>
-                <li class="lihead"><a href="#" id="ahead">Conviértete en orador</a></li>
-                <li class="lihead"><a href="#" class="text-success" id="ahead">Comprar tickets</a></li>
-             </ul>
-          </div>
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <img src="../Trabajo/img/codoacodo.png" alt="">
+              <a class="navbar-brand" href="#" id="izquierda">Conf Bs As</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-success" href="#" >Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </header>
 
 <main>
-    <section id="flag">
-    <img src="../Trabajo/img/ba1.jpg" alt="btn1">
-        <div class="caja">
-        <h2>Conf. Bs As</h2>
-        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con
-        nuestra comunidad el conocimiento y experiencia de los expertos que 
-        estan creando el futuro de internet. Ven a conocer miembros del
-        evento, a otros estudiantes de Codo a Codo y los oradores de primer
-        nivel que tenemos para ti. Te esperamos!>
-        </p>
+  <section id="flag" class="flag">
+    <span class="flag-filtro"></span>
 
-    <button id="buttona" class="btn btn-outline-light">Quiero ser orador</button>
-    <button id="botonb">Comprar tickets</button>
-        </div>
-    </section>
+    <div class="flag-card justify-content-md-end">
+      <h2 class="flag-Title">Conf Bs As</h2>
+      <p class="Flag-text">
+        Bs As llega por primera vez a Argentina. Un evento para compartir
+        nuestra comunidad el conocimiento y experiencia de los expertos
+        que estan creando el futuro de Internet. Ven a conocer los
+        miembros del evento, a otros estudiantes de Codo a Codo y a los
+        oradores de primer nivel que tenemos para ti. Te esperamos!
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button id="flag-button" class="btn btn-outline-light">Quiero ser orador</button>
+        <button id="flag-buttona" class="btn btn-outline-light" style="background-color: rgb(85, 192, 85);">Comprar tickets</button>
+      </div>
+    </div>
+  </section>
 </main>
-
 
     </section>
     <section class="container">
@@ -111,10 +120,10 @@
 
     <section class="container-fluid">
             <div class="row">
-                    <div class="col-6 p-0">
+                    <div class="col-md-6 p-0">
                             <img src="img/honolulu.jpg" class="w-100" alt=""/>
                     </div>
-                    <div class="col-6 p-0 lugar-fecha-texto" id="derecho">
+                    <div class="col-md-6 p-0 lugar-fecha-texto" id="derecho">
                             <h1 class="BsAs">Bs As-Octubre</h1>
                             <p class="BsAs">Buenos aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad( aproximadamente 600 km² de superficie).
                             </p>
@@ -145,20 +154,33 @@
     </div>
 
 </main>
-  <footer>
-    <nav class="navfoot">
-      <ul class="ulfoot">
-        <li class="lifoot"><a href="#" class="afoot">Preguntas frecuentes</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Contactános</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Prensa</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Conferencias</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Términos y condiciones</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Privacidad</a></li>
-        <li class="lifoot"><a href="#" class="afoot">Estudiantes</a></li>
-      </ul>
-    </nav> 
-  </footer>
+<footer>
 
+        <ul class="nav nav-justified" style="background-color: rgb(31, 84, 122);" id="navfoot">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preguntas frecuentes</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactános</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+          </ul>
+
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
 </body>
 </html>
